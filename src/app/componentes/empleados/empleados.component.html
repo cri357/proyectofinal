@@ -1,0 +1,21 @@
+<hr>
+<div class="container">
+    <div class="row">
+        <div class="col s12 center-align">
+            <h1>Personal</h1>
+        </div>
+    </div>
+</div>
+
+
+<section id="personal">
+    <div class="container1">
+        <div *ngFor="let empleado of empleados" class="empleado-card" [ngClass]="{'destacado': empleado.destacado}">
+          <img [src]="empleado.foto" [alt]="empleado.nombre" class="empleado-foto">
+          <h3 [ngClass]="{'nombre-empleado': !empleado.destacado, 'nombre-destacado': empleado.destacado}">{{ empleado.nombre }}</h3>
+          <p class="puesto">{{ empleado.puesto }}</p>
+          <p *ngIf="empleado.descripcion">{{ empleado.descripcion }}</p>
+          <p [ngStyle]="{'font-weight': empleado.destacado ? 'bold' : 'normal'}">Estado: {{ empleado.destacado ? 'Destacado' : 'Regular' }}</p>
+        </div>
+    </div>
+</section>

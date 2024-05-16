@@ -1,0 +1,37 @@
+
+p{
+    color: black;
+}
+
+titulo{
+    color: black;
+}
+
+/* Estilos generales */
+.card {
+    margin: 10px 10; /* Asegura un espaciado vertical entre tarjetas */
+}
+
+
+/* Ajustes para tabletas: ajustamos el tamaño de texto, y tal vez el padding dentro de las tarjetas */
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    h1 {
+        font-size: 24px; /* Reduce el tamaño del título principal para tabletas */
+    }
+    .card-content p, .card-content b {
+        font-size: 14px; /* Ajusta el tamaño del texto dentro de la tarjeta para mejor legibilidad */
+    }
+}
+
+/* Ajustes para PCs: podríamos querer ajustar aún más los tamaños de texto o el espaciado */
+@media only screen and (min-width: 993px) {
+    h1 {
+        font-size: 28px; /* Aumenta el tamaño para ser más legible en pantallas grandes */
+    }
+    .card {
+        margin: 10px 0; /* Aumenta el margen entre tarjetas para evitar que se vean apretadas */
+    }
+    .card-content p, .card-content b {
+        font-size: 16px; /* Ajusta el tamaño del texto para pantallas grandes */
+    }
+}

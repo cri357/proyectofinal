@@ -1,0 +1,32 @@
+<hr>
+<section id="galeria">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 center-align">
+                <h1>Catalogo</h1>
+            </div>
+        </div> 
+        <div class="row">
+            <div class="col s12">
+                <ul class="listado center-align">
+                    <li><a href="#" id="Todos">Todos</a></li>
+                    <li><a href="#" id="Tenis">Tenis</a></li>
+                    <li><a href="#" id="Playeras">Playeras</a></li>
+                    <li><a href="#" id="Pans">Pans</a></li>
+                    <li><a href="#" id="Chamarra">Chamarra</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 center-align">
+                <div class="filtros" *ngFor="let prenda of catalogo">
+                    <div  [class]="prenda.categoria" class="col s4">
+                        <img [src]="prenda.imagen"  alt="" class="responsive-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+      

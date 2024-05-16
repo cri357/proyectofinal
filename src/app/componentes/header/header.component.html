@@ -1,0 +1,20 @@
+<header class="valign-wrapper" id="inicio">
+
+    <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
+    <div class="overlay"></div>
+  
+    <!-- The HTML5 video element that will create the background video on the header -->
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" oncanplay="this.play()" onloadedmetadata="this.muted = true">
+      <source src="../../../assets/videos/jordan.mp4" type="video/mp4">
+    </video>
+  
+    <!-- The header content -->
+    <div class="container">
+      <div class="row center-align">
+        <div class="col s12 white-text">
+            <h1 id="nombre">{{nombreempresa | uppercase}}</h1>
+            <p id="slogan">{{slogan | titlecase}}</p>
+        </div>
+      </div>
+    </div>
+  </header>

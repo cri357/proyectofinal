@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+
+    font-family: "pascua";
+    src: url('assets/fonts/easter_bunny_2/EasterBunnyPersonalUse.ttf');
+}
+
+h1{
+    font-family: 'pascua';
+    color: white;
+}
+
+body{
+
+    background-color: #000000 ;
+}
+h2{
+    color: white;
+}
+p{
+    color: white;
+}

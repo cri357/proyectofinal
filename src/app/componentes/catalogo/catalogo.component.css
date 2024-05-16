@@ -1,0 +1,20 @@
+ul.listado{
+    list-style: none;
+    padding:0px;
+    margin:0px;
+    }
+    ul.listado li{
+    width:80px;
+    display: inline-block;
+    margin-left:5px;
+    }
+    .filtros div{
+    border:3px solid red;
+    width:200px;
+    height: 200px;
+    margin-left: 10px;
+    margin-top: 10px;
+    display:flex;
+    align-items: center; /* Centra la imagen verticalmente */
+    justify-content: center; /* Centra la imagen horizontalmente */
+    }

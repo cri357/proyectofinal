@@ -1,0 +1,35 @@
+<hr>
+<section id="promociones">
+    <div class="container">
+        <div class="row">
+            <div class="col s12 center-align">
+                <h1>Promociones</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12 m8 l5" *ngFor="let promociones of promociones">
+                <div class="card">
+                    <div class="card-image">
+                      <img [src]="promociones.imagen">
+                      <span class="card-title">{{promociones.titulo}}</span>
+                    </div>
+                    <div class="card-content">
+                      <p>{{promociones.descripcion}}</p>
+                      <b>{{promociones.precio}}</b>
+                    </div>
+                    <div class="card-action">
+                      <a href="#">This is a link</a>
+                      <i *ngIf="promociones.categoria !== 'jordan4' && promociones.categoria !== 'jordan1' && promociones.categoria !== 'jorda12' && promociones.categoria !== 'jordan99' && promociones.categoria !== 'jordan7'  && promociones.categoria !== 'jordanlv'" class="material-icons" [ngStyle]="{'color': promociones.color, 'font-size': '20px'}">{{promociones.icono}}</i>
+                        <i *ngIf="promociones.categoria === 'jordan4'" class="fa-solid fa-shoe-prints" [ngStyle]="{'color': promociones.color, 'font-size': '30px'}"></i>
+                        <i *ngIf="promociones.categoria === 'jordan1'" class="fa-solid fa-shoe-prints" [ngStyle]="{'color': promociones.color, 'font-size': '30px'}"></i>
+                        <i *ngIf="promociones.categoria === 'jorda12'" class="fa-solid fa-shoe-prints" [ngStyle]="{'color': promociones.color, 'font-size': '30px'}"></i>
+                        <i *ngIf="promociones.categoria === 'jordan99'" class="fa-solid fa-shoe-prints" [ngStyle]="{'color': promociones.color, 'font-size': '30px'}"></i>
+                        <i *ngIf="promociones.categoria === 'jordan7'" class="fa-solid fa-shoe-prints" [ngStyle]="{'color': promociones.color, 'font-size': '30px'}"></i> 
+                        <i *ngIf="promociones.categoria === 'jordanlv'" class="fa-solid fa-shoe-prints" [ngStyle]="{'color': promociones.color, 'font-size': '30px'}"></i>                                               
+                    </div>
+                  </div>
+            </div>
+        </div>
+    
+    </div>
+    </section>

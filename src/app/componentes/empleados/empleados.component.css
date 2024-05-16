@@ -1,0 +1,37 @@
+.container1 {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente línea si no hay espacio */
+    justify-content: space-around; /* Distribuye el espacio alrededor de los elementos */
+    gap: 5px; /* Espacio entre los elementos */
+  }
+  
+  /* Estilos para cada tarjeta de empleado */
+  .empleado-card {
+    border: 5px solid #ffffff  ;
+    border-radius: 1px;
+    padding: 15px;
+    margin-bottom: 15px;
+    width: 300px; /* O ajusta según necesites */
+  }
+  
+  .empleado-foto {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+  }
+  
+  .destacado {
+    border-color: #ffffff ;
+  }
+  
+  .puesto {
+    color: #ffffff;
+  }
+
+  .nombre-empleado {
+    color: #ff0000; /* Azul oscuro para empleados regulares */
+}
+
+.nombre-destacado {
+    color: #ff0000; /* Rojo para empleados destacados */
+}
